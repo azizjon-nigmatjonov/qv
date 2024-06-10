@@ -1,0 +1,1 @@
+export { useRegistrationById } from './useRegistrationById'

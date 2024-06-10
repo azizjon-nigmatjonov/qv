@@ -1,0 +1,36 @@
+.test-mode {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-top: 5px;
+  z-index: 5;
+  padding-bottom: 5px;
+  // pointer-events: none;
+}
+
+.test-mode__description {
+  font-weight: bold;
+  white-space: nowrap;
+  animation-name: rightToLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
+  span {
+    display: inline-block;
+  }
+
+  span:not(:last-child) {
+    margin-right: 240px;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-180%);
+  }
+}

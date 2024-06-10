@@ -1,0 +1,1 @@
+export { SimpleMuiTabs } from './SimpleTabs'

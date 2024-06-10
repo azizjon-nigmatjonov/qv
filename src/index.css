@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #303940;
+  letter-spacing: 0.1px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+#root {
+  overflow: hidden;
+  height: 100vh;
+}
+.slick-dots.slick-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  bottom: -100px;
+}
+
+.slick-dots.slick-thumb li {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.slick-dots.slick-thumb li.slick-active {
+  border: 1px solid #fff;
+}
+/* .slick-list {
+  height: fit-content !important;
+} */
